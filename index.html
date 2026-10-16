@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alvarez Auto Fix | Mobile Mechanic Dallas-Fort Worth</title>
+<meta content="Alvarez Auto Fix: Expert mobile mechanic serving the Dallas-Fort Worth metroplex and 25-mile radius. Affordable prices, zero towing fees, on-site diagnostics, repairs, and maintenance." name="description"/>
+<!-- Tailwind CSS CDN with forms and container queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              redHover: '#B91C1C',
+              dark: '#0A0F1D',
+              surface: '#111827',
+              card: '#1F2937',
+              border: '#374151',
+              accent: '#EF4444'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-red selection:text-white">
+<!-- BEGIN: EmergencyTopBanner -->
+<aside class="bg-gradient-to-r from-red-700 via-brand-red to-red-700 text-white text-xs sm:text-sm font-semibold tracking-wide py-2.5 px-4 shadow-md sticky top-0 z-50" data-purpose="emergency-announcement-bar">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+<div class="flex items-center space-x-2">
+<span class="inline-flex h-2.5 w-2.5 rounded-full bg-yellow-300 animate-ping"></span>
+<span class="font-extrabold tracking-wider uppercase text-yellow-300">Fast Roadside Help:</span>
+<span>Stranded or need urgent mobile repair in DFW? We come directly to you!</span>
+</div>
+<div class="flex items-center flex-wrap justify-center gap-3 text-xs sm:text-sm">
+<span class="hidden lg:inline-block text-red-200">Mon–Wed: 9am – 7pm</span>
+<span class="hidden sm:inline-block bg-black/25 px-2.5 py-0.5 rounded text-white font-medium border border-white/20">🎖️ Senior &amp; Military Discounts</span>
+<a class="inline-flex items-center gap-1.5 bg-white text-red-700 hover:bg-slate-100 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider transition-all duration-150 shadow" href="tel:7137026531">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"></path></svg>
+          (713) 702-6531
+        </a>
+</div>
+</div>
+</aside>
+<!-- END: EmergencyTopBanner -->
+<!-- BEGIN: MainHeader -->
+<header class="border-b border-slate-800 bg-brand-surface/95 backdrop-blur-md sticky top-10 z-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+<!-- Alvarez Auto Fix Logo & Title -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="relative w-14 h-14 rounded-full overflow-hidden border-2 border-brand-red p-0.5 bg-black red-glow group-hover:scale-105 transition-transform duration-300">
+<img alt="Alvarez Auto Fix Official Emblem" class="w-100% h-100% object-cover object-center rounded-full" src="assets/vals-logo-square.jpg"/>
+</div>
+<div>
+<span class="text-xl sm:text-2xl font-black uppercase tracking-tight block text-white group-hover:text-brand-accent transition-colors">
+            Alvarez <span class="text-brand-red">Auto Fix</span>
+</span>
+<span class="text-[10px] sm:text-xs uppercase tracking-widest text-slate-400 font-semibold block">
+            Repair • Maintenance • Performance
+          </span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden xl:flex items-center space-x-7 text-sm font-medium text-slate-300">
+<a class="hover:text-brand-red transition-colors" href="#services">Services</a>
+<a class="hover:text-brand-red transition-colors" href="#how-it-works">How It Works</a>
+<a class="hover:text-brand-red transition-colors" href="#pricing-guarantee">Pricing &amp; Policy</a>
+<a class="hover:text-brand-red transition-colors" href="#reviews">Customer Reviews</a>
+<a class="hover:text-brand-red transition-colors" href="#service-area">Service Area</a>
+<a class="hover:text-brand-red transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- Action Buttons -->
+<div class="flex items-center space-x-3">
+<a class="hidden sm:inline-flex items-center justify-center gap-2 border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white px-3.5 py-2.5 rounded-lg text-xs md:text-sm font-semibold transition" href="tel:7137026531">
+<svg class="w-4 h-4 text-brand-red" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+          (713) 702-6531
+        </a>
+<a class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-redHover text-white px-4 py-2.5 rounded-lg text-xs md:text-sm font-bold uppercase tracking-wider shadow-lg red-glow transition transform active:scale-95" href="#book-service">
+          Book Mobile Service
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative carbon-texture overflow-hidden pt-12 pb-20 border-b border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Hero Copy Column -->
+<div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/60 border border-brand-red/40 text-brand-accent text-xs font-semibold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+            Dallas-Fort Worth's Premier On-Site Mechanic
+          </div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight uppercase tracking-tight">
+            We Come To You — <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-brand-red to-orange-500">
+              Expert Auto Repair
+            </span> <br/>
+            At Your Door.
+          </h1>
+<p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+<strong class="text-white font-semibold">Alvarez Auto Fix:</strong> Your trusted mobile mechanic servicing the <strong class="text-white">Dallas-Fort Worth area</strong> and surrounding communities within a 25-mile radius. No towing fees, no waiting in dirty repair shop lobbies, and honest pricing that won’t break the bank.
+          </p>
+<!-- Main CTA Buttons -->
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+<a class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-bold text-base uppercase tracking-wider shadow-xl red-glow transition transform hover:-translate-y-0.5" href="#book-service">
+              Request a Quote / Book Service
+            </a>
+<a class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-bold text-base flex items-center justify-center gap-3 transition" href="tel:7137026531">
+<svg class="w-5 h-5 text-brand-red" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+              Call (713) 702-6531 Now
+            </a>
+</div>
+<!-- Highlight Key Guarantees -->
+<div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left">
+<div class="flex items-center gap-2.5">
+<div class="p-1.5 rounded-md bg-red-950/70 border border-brand-red/30 text-brand-red">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-xs sm:text-sm font-semibold text-slate-200">Zero Tow Fees</span>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="p-1.5 rounded-md bg-red-950/70 border border-brand-red/30 text-brand-red">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-xs sm:text-sm font-semibold text-slate-200">Clear Upfront Quotes</span>
+</div>
+<div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+<div class="p-1.5 rounded-md bg-red-950/70 border border-brand-red/30 text-brand-red">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-xs sm:text-sm font-semibold text-slate-200">Senior &amp; Military Deals</span>
+</div>
+</div>
+</div>
+<!-- Right Hero Badge Column -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative max-w-md w-full">
+<!-- Glow background circle -->
+<div class="absolute -inset-1.5 bg-gradient-to-r from-brand-red to-orange-600 rounded-3xl blur-xl opacity-40"></div>
+<div class="relative bg-brand-surface rounded-2xl border border-slate-700 overflow-hidden shadow-2xl p-6 text-center">
+<div class="relative w-full aspect-square max-w-sm mx-auto overflow-hidden rounded-xl border-2 border-brand-red/70 shadow-inner">
+<img alt="Alvarez Auto Fix Garage Badge - Personal Mechanic Val" class="w-full h-full object-cover" src="assets/alvarez-brand-art.png"/>
+</div>
+<div class="mt-5 space-y-2">
+<div class="inline-block bg-brand-red/20 text-brand-accent px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider border border-brand-red/40">
+                  Fully Insured &amp; Roadside Ready
+                </div>
+<h2 class="text-lg font-bold text-white uppercase">Work Done Right. Guaranteed.</h2>
+<p class="text-xs text-slate-400">
+                  Serving your driveway, apartment parking, office lot, or roadside breakdown throughout DFW.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TrustBadgesRow -->
+<section class="bg-brand-surface border-b border-slate-800 py-6">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+<div class="flex flex-col items-center justify-center p-3">
+<span class="text-2xl mb-1">🚫🚚</span>
+<span class="text-sm font-bold text-white">No Tow Truck Needed</span>
+<span class="text-xs text-slate-400">Save $100-$250 instantly</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<span class="text-2xl mb-1">📋🔍</span>
+<span class="text-sm font-bold text-white">Transparent Quotes</span>
+<span class="text-xs text-slate-400">No surprise markup fees</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<span class="text-2xl mb-1">⚡🧰</span>
+<span class="text-sm font-bold text-white">On-Site Diagnosis</span>
+<span class="text-xs text-slate-400">Complete mobile workshop</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<span class="text-2xl mb-1">🇺🇸🎖️</span>
+<span class="text-sm font-bold text-white">Military &amp; Senior Discounts</span>
+<span class="text-xs text-slate-400">Honoring our community</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 col-span-2 md:col-span-1">
+<span class="text-2xl mb-1">🛡️⭐</span>
+<span class="text-sm font-bold text-white">Insured &amp; Reliable</span>
+<span class="text-xs text-slate-400">Quality replacement parts</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TrustBadgesRow -->
+<!-- BEGIN: HowItWorks -->
+<section class="py-20 bg-brand-dark border-b border-slate-800" id="how-it-works">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-brand-red uppercase tracking-widest text-xs font-extrabold">Hassle-Free Mobile Experience</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
+          How Alvarez Mobile Auto Fix Works
+        </h2>
+<p class="text-slate-400 text-sm sm:text-base mt-3">
+          Car troubles are stressful enough. We eliminated the tow truck, waiting lines, and dealership overhead in 4 easy steps.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="bg-brand-surface rounded-xl p-6 border border-slate-800 relative hover:border-brand-red/50 transition duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-red/20 border border-brand-red text-brand-red font-black text-xl flex items-center justify-center mb-5">
+            01
+          </div>
+<h3 class="text-lg font-bold text-white mb-2">Call or Text Us</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+            Reach out directly at <strong class="text-white">(713) 702-6531</strong> or complete our quick booking form with your vehicle details and location.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-brand-surface rounded-xl p-6 border border-slate-800 relative hover:border-brand-red/50 transition duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-red/20 border border-brand-red text-brand-red font-black text-xl flex items-center justify-center mb-5">
+            02
+          </div>
+<h3 class="text-lg font-bold text-white mb-2">We Diagnose On-Site</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+            Our technician drives straight to your home, workplace, or breakdown site equipped with full diagnostic gear and pro tools.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-brand-surface rounded-xl p-6 border border-slate-800 relative hover:border-brand-red/50 transition duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-red/20 border border-brand-red text-brand-red font-black text-xl flex items-center justify-center mb-5">
+            03
+          </div>
+<h3 class="text-lg font-bold text-white mb-2">Upfront Quote First</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+            You receive a clear breakdown of needed repairs and exact part costs before a single bolt is turned. Zero hidden fees.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-brand-surface rounded-xl p-6 border border-slate-800 relative hover:border-brand-red/50 transition duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-red/20 border border-brand-red text-brand-red font-black text-xl flex items-center justify-center mb-5">
+            04
+          </div>
+<h3 class="text-lg font-bold text-white mb-2">Repaired While You Relax</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+            High-quality components are installed right where you are parked. Test driven, cleaned up, and guaranteed.
+          </p>
+</div>
+</div>
+<!-- Quick Call Banner within How It Works -->
+<div class="mt-12 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h4 class="text-xl font-bold text-white">Need an immediate on-site diagnostic?</h4>
+<p class="text-slate-300 text-sm mt-1">We can often dispatch same-day across Dallas-Fort Worth.</p>
+</div>
+<a class="whitespace-nowrap px-6 py-3 rounded-lg bg-brand-red hover:bg-brand-redHover font-bold text-white text-sm uppercase tracking-wider transition red-glow" href="tel:7137026531">
+          Call (713) 702-6531 Now
+        </a>
+</div>
+</div>
+</section>
+<!-- END: HowItWorks -->
+<!-- BEGIN: ServicesCatalog -->
+<section class="py-20 bg-brand-surface border-b border-slate-800" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-brand-red uppercase tracking-widest text-xs font-extrabold">Complete Auto Care At Your Location</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
+          Comprehensive Mobile Repair Services
+        </h2>
+<p class="text-slate-400 text-sm sm:text-base mt-3">
+          From routine maintenance to intricate engine component replacements, Alvarez Auto Fix has the mobile tooling and expertise to handle it on the spot.
+        </p>
+</div>
+<!-- Services Grid: Categorized Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. Electrical System -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">⚡</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-red-950/60 text-brand-accent border border-brand-red/40">Critical Electrical</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Electrical System</h3>
+<p class="text-xs text-slate-400 mb-4">Car won't crank or battery light flashing? We test and swap components on-site.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Starter Replacements</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Alternator Replacement &amp; Testing</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Battery Diagnostics &amp; Replacement</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Book Electrical Service →</a>
+</div>
+</article>
+<!-- 2. Cooling System -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">❄️</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-blue-950/60 text-blue-400 border border-blue-800/40">Overheating Fix</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Cooling System</h3>
+<p class="text-xs text-slate-400 mb-4">Prevent blown head gaskets and engine seizure caused by coolant leaks.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Radiator Replacements</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Upper &amp; Lower Coolant Hoses</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Water Pump Replacements</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Request Cooling Repair →</a>
+</div>
+</article>
+<!-- 3. Suspension -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🚙</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Ride Quality</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Suspension System</h3>
+<p class="text-xs text-slate-400 mb-4">Eliminate clunking noises, uneven tire wear, and harsh driving rides.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Strut &amp; Shock Assembly</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Upper &amp; Lower Control Arms</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Sway Bar Links &amp; Ball Joints</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Fix Suspension Issues →</a>
+</div>
+</article>
+<!-- 4. Drivetrain -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">⚙️</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Power Delivery</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Drivetrain</h3>
+<p class="text-xs text-slate-400 mb-4">Clicking turns or heavy vibrations? We replace worn axles on site.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> CV Axle Assembly Replacements</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Driveshaft Replacements &amp; U-Joints</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Hub &amp; Bearing Replacements</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Schedule Drivetrain Check →</a>
+</div>
+</article>
+<!-- 5. Brake System -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🛑</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-red-950/60 text-brand-accent border border-brand-red/40">Safety Critical</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Brake System</h3>
+<p class="text-xs text-slate-400 mb-4">Squeaking, grinding, or soft pedals? We ensure reliable stopping power.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Premium Ceramic Brake Pads</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Disc Rotors &amp; Drum Brakes</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Brake Caliper Replacements &amp; Bleed</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Book Brake Service →</a>
+</div>
+</article>
+<!-- 6. Steering -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🔄</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Control &amp; Alignment</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Steering Components</h3>
+<p class="text-xs text-slate-400 mb-4">Loose steering wheels or whining pumps restored quickly.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Outer &amp; Inner Tie Rods</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Power Steering Pump Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Rack and Pinion Replacements</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Fix Steering Problems →</a>
+</div>
+</article>
+<!-- 7. Engine & Gaskets -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🔧</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-red-950/60 text-brand-accent border border-brand-red/40">Engine Gaskets</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Engine Gaskets &amp; Seals</h3>
+<p class="text-xs text-slate-400 mb-4">Stop oil and exhaust leaks right at the source with precision sealing.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Head Gaskets Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Valve Cover Gaskets</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Oil Pan &amp; Exhaust Manifold Gaskets</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Request Gasket Service →</a>
+</div>
+</article>
+<!-- 8. Regular Maintenance -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🛢️</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-green-950/60 text-green-400 border border-green-800/40">Tune-Ups</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Regular Maintenance</h3>
+<p class="text-xs text-slate-400 mb-4">Keep your car running strong with hassle-free scheduled maintenance at home.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Full Synthetic Oil &amp; Filter Change</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Spark Plugs Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Engine Air &amp; Cabin Air Filters</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Book Scheduled Tune-Up →</a>
+</div>
+</article>
+<!-- 9. Fuel / Gas System -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">⛽</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Fuel Delivery</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Fuel / Gas System</h3>
+<p class="text-xs text-slate-400 mb-4">Stuttering, misfires, or hard starting resolved with fuel system repairs.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Fuel Gas Pump Replacements</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Inline Gas Filter Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Fuel Injector Servicing &amp; Swaps</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Resolve Fuel Issues →</a>
+</div>
+</article>
+<!-- 10. Air & Intake -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🌪️</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Air Intake</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Air &amp; Intake System</h3>
+<p class="text-xs text-slate-400 mb-4">Fix rough idles, throttle hesitation, and intake vacuum leaks.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Intake Manifold Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Intake Gaskets &amp; Seals</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Throttle Body Cleaning &amp; Swaps</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Request Intake Service →</a>
+</div>
+</article>
+<!-- 11. Drive Belts -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">🔄</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Belt Drive</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Drive Belts &amp; Pulleys</h3>
+<p class="text-xs text-slate-400 mb-4">Eliminate squeals and prevent sudden roadside alternator or water pump failures.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Serpentine Belt Replacement</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Belt Tensioners &amp; Idler Pulleys</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Accessory Drive Alignments</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Replace Belts Now →</a>
+</div>
+</article>
+<!-- 12. Heating & A/C -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl p-2.5 rounded-lg bg-brand-surface border border-slate-700">☀️</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-cyan-950/60 text-cyan-400 border border-cyan-800/40">Texas Climate Ready</span>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Heating &amp; A/C Systems</h3>
+<p class="text-xs text-slate-400 mb-4">Survive the Texas heat with ice-cold air conditioning restored in your driveway.</p>
+<ul class="text-sm text-slate-300 space-y-2 border-t border-slate-800 pt-3">
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> A/C Compressor Replacements</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Vacuum System Test &amp; Leak Check</li>
+<li class="flex items-center gap-2"><span class="text-brand-red">✔</span> Complete Refrigerant System Recharge</li>
+</ul>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-800/80">
+<a class="text-xs font-semibold text-brand-red hover:text-red-400 inline-flex items-center gap-1" href="#book-service">Restore Cold A/C →</a>
+</div>
+</article>
+<!-- 13. Exhaust & Emissions (Spanning full width in row or 13th highlight card) -->
+<article class="bg-brand-dark p-6 rounded-xl border border-slate-800 hover:border-brand-red transition duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-3">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="text-2xl p-2 rounded bg-brand-surface border border-slate-700">💨</span>
+<span class="text-xs uppercase font-bold px-2.5 py-1 rounded bg-amber-950/60 text-amber-400 border border-amber-800/40">Inspection &amp; Emissions</span>
+<h3 class="text-lg font-bold text-white">Exhaust &amp; Emissions (Catalytic Converter)</h3>
+</div>
+<p class="text-slate-300 text-sm max-w-3xl">
+                Check Engine Light on for code P0420/P0430? We perform full diagnostic checks and mobile catalytic converter replacements with high-flow OEM-grade solutions to pass Texas state emissions.
+              </p>
+</div>
+<a class="whitespace-nowrap px-6 py-3 rounded-lg bg-brand-red hover:bg-brand-redHover font-bold text-white text-xs uppercase tracking-wider text-center transition" href="#book-service">
+              Get Emissions Quote
+            </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: ServicesCatalog -->
+<!-- BEGIN: PricingAndGuarantee -->
+<section class="py-20 bg-brand-dark border-b border-slate-800" id="pricing-guarantee">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-brand-red uppercase tracking-widest text-xs font-extrabold">Zero Mystery Charges</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
+          Transparent Pricing &amp; Policy
+        </h2>
+<p class="text-slate-300 text-sm sm:text-base mt-3">
+          Upfront diagnostic fees and clear starting rates with no hidden shop fees or surprise markups. See how our mobile model beats brick-and-mortar mechanics.
+        </p>
+</div>
+<!-- Shop Comparison Table -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-12">
+<!-- Traditional Shop Card -->
+<div class="bg-brand-surface/70 rounded-2xl p-6 sm:p-8 border border-slate-800 relative">
+<div class="text-slate-400 font-bold uppercase text-xs tracking-wider mb-2">The Old Way</div>
+<h3 class="text-2xl font-bold text-white mb-6">Traditional Repair Shop</h3>
+<ul class="space-y-4 text-slate-300 text-sm">
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-black text-lg">✕</span>
+<span><strong>$100 - $250 Towing Fee</strong> just to get your vehicle to their parking lot.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-black text-lg">✕</span>
+<span><strong>3 to 5 Days Waiting</strong> in the vehicle queue before diagnosis even begins.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-black text-lg">✕</span>
+<span><strong>Inflated Shop Overhead:</strong> Expensive building rent, franchise fees, and marked-up part margins passed on to you.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-red-500 font-black text-lg">✕</span>
+<span><strong>Hidden Shop Supplies:</strong> Vague extra charges for shop supplies, hazardous disposal, and administrative fees.</span>
+</li>
+</ul>
+</div>
+<!-- Alvarez Mobile Auto Fix Card -->
+<div class="bg-gradient-to-b from-brand-surface to-slate-900 rounded-2xl p-6 sm:p-8 border-2 border-brand-red red-glow relative">
+<div class="inline-block bg-brand-red text-white text-[11px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+            Recommended Value
+          </div>
+<h3 class="text-2xl font-bold text-white mb-6">Alvarez Mobile Auto Fix</h3>
+<ul class="space-y-4 text-slate-200 text-sm">
+<li class="flex items-start gap-3">
+<span class="text-green-400 font-black text-lg">✔</span>
+<span><strong>$0 Towing Needed:</strong> We roll up directly to your home, workplace, or breakdown spot.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-green-400 font-black text-lg">✔</span>
+<span><strong>Same-Day / Direct Service:</strong> Diagnostic and repairs initiated immediately upon arrival.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-green-400 font-black text-lg">✔</span>
+<span><strong>Complete Transparency:</strong> Watch our technician work, ask questions, and inspect replaced parts yourself.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-green-400 font-black text-lg">✔</span>
+<span><strong>Community Discounts:</strong> Honest pricing with dedicated discounts for Senior Citizens and US Military personnel.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Policy Guarantee Strip -->
+<div class="bg-brand-surface rounded-xl border border-slate-800 p-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<div>
+<h4 class="text-lg font-bold text-white">Our Upfront Diagnostic Commitment</h4>
+<p class="text-slate-400 text-xs sm:text-sm mt-1">
+            Before we begin any work, we thoroughly inspect the vehicle, verify failure causes, and provide an itemized quote so you retain complete control.
+          </p>
+</div>
+<a class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 border border-brand-red text-white font-bold text-xs uppercase tracking-wider whitespace-nowrap transition" href="#book-service">
+          Book Transparent Inspection
+        </a>
+</div>
+</div>
+</section>
+<!-- END: PricingAndGuarantee -->
+<!-- BEGIN: CustomerReviews -->
+<section class="py-20 bg-brand-surface border-b border-slate-800" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-brand-red uppercase tracking-widest text-xs font-extrabold">Real Dallas-Fort Worth Clients</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
+          Verified Customer Recommendations
+        </h2>
+<p class="text-slate-400 text-sm sm:text-base mt-3">
+          Our reputation in the DFW metroplex is built on honesty, safety, and treating every vehicle as if it were our own.
+        </p>
+</div>
+<!-- Real Reviews from Facebook Snapshot Data -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<!-- Review 1: Erick Barnhart -->
+<div class="bg-brand-dark rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl relative flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+              ★★★★★ <span class="text-xs text-slate-400 ml-2 font-medium">Verified Facebook Review</span>
+</div>
+<blockquote class="text-slate-200 text-base sm:text-lg italic leading-relaxed mb-6">
+              "What really stood out to me, was his commitment to trust and safety. He took the time to explain exactly what went wrong and made sure the repair was completed properly before handing over the keys."
+            </blockquote>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+<div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold text-white border border-brand-red text-base">
+              EB
+            </div>
+<div>
+<div class="font-bold text-white text-base">Erick Barnhart</div>
+<div class="text-xs text-brand-red font-semibold">Recommends Alvarez Auto Fix</div>
+</div>
+</div>
+</div>
+<!-- Review 2: Eduardo Muniz -->
+<div class="bg-brand-dark rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl relative flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+              ★★★★★ <span class="text-xs text-slate-400 ml-2 font-medium">Verified Facebook Review</span>
+</div>
+<blockquote class="text-slate-200 text-base sm:text-lg italic leading-relaxed mb-6">
+              "This mechanic is by far the most honest person I've trusted with my vehicles. Every time I need work done, he's the one I call. Reliable, fast, and does not push unnecessary work on you."
+            </blockquote>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+<div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold text-white border border-brand-red text-base">
+              EM
+            </div>
+<div>
+<div class="font-bold text-white text-base">Eduardo Muniz</div>
+<div class="text-xs text-brand-red font-semibold">Recommends Alvarez Auto Fix</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Credentials Banner -->
+<div class="mt-12 text-center text-xs text-slate-400 uppercase tracking-widest font-semibold flex items-center justify-center gap-6 flex-wrap">
+<span>✓ Dedicated Safety Standards</span>
+<span>•</span>
+<span>✓ ASE Knowledge &amp; Experience</span>
+<span>•</span>
+<span>✓ Fully Insured Mobile Technician</span>
+</div>
+</div>
+</section>
+<!-- END: CustomerReviews -->
+<!-- BEGIN: ServiceAreaSection -->
+<section class="py-20 bg-brand-dark border-b border-slate-800" id="service-area">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Service Area Copy -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold uppercase tracking-wider">
+            📍 Mobile Coverage Zone
+          </div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">
+            Serving Dallas-Fort Worth &amp; 25-Mile Radius
+          </h2>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            You don’t have to worry about how to get your car to a mechanic when it won’t start or isn’t safe to drive. We operate a fully equipped mobile unit that reaches your exact location throughout the DFW metroplex.
+          </p>
+<!-- Cities Badges Grid -->
+<div>
+<span class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 block">Primary Communities Served:</span>
+<div class="flex flex-wrap gap-2 text-xs font-semibold text-slate-200">
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Dallas</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Fort Worth</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Arlington</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Grand Prairie</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Irving</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Garland</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Plano</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Carrollton</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Richardson</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">Denton</span>
+<span class="bg-brand-surface border border-slate-700 px-3 py-1.5 rounded-lg">&amp; Surrounding Towns</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs sm:text-sm text-slate-300">
+<strong>Where can we service your car?</strong> We routinely perform jobs in private driveways, residential curbs, apartment parking lots, and corporate office parks where permission is granted.
+          </div>
+</div>
+<!-- Service Area Graphic Card -->
+<div class="lg:col-span-6">
+<div class="bg-brand-surface border border-slate-700 rounded-2xl p-8 relative overflow-hidden shadow-2xl text-center">
+<div class="w-20 h-20 mx-auto rounded-full bg-brand-red/20 border-2 border-brand-red flex items-center justify-center text-3xl mb-4 red-glow">
+              🚗⚡
+            </div>
+<h3 class="text-2xl font-black text-white uppercase tracking-tight mb-2">DFW Mobile Dispatch</h3>
+<p class="text-slate-400 text-sm max-w-md mx-auto mb-6">
+              Call our mobile dispatch number to confirm estimated technician arrival times for your zip code.
+            </p>
+<div class="bg-brand-dark rounded-xl p-4 border border-slate-800 mb-6 text-left space-y-2 text-xs sm:text-sm">
+<div class="flex justify-between text-slate-300">
+<span>Coverage Radius:</span>
+<span class="font-bold text-white">25 Miles from Central DFW</span>
+</div>
+<div class="flex justify-between text-slate-300">
+<span>Working Days:</span>
+<span class="font-bold text-white">Monday – Wednesday</span>
+</div>
+<div class="flex justify-between text-slate-300">
+<span>Hours:</span>
+<span class="font-bold text-white">9:00 AM – 7:00 PM</span>
+</div>
+<div class="flex justify-between text-slate-300">
+<span>Emergency Breakdown:</span>
+<span class="font-bold text-brand-red">Urgent Calls Welcome</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-brand-red hover:bg-brand-redHover font-bold text-white uppercase tracking-wider text-sm transition" href="tel:7137026531">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"></path></svg>
+              Confirm Dispatch: (713) 702-6531
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServiceAreaSection -->
+<!-- BEGIN: BookingAndContactSection -->
+<section class="py-20 bg-brand-surface relative" id="book-service">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Contact Details & Direct Channels -->
+<div class="lg:col-span-5 space-y-6" id="contact">
+<span class="text-brand-red uppercase tracking-widest text-xs font-extrabold">Get Connected</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">
+            Schedule Your Mobile Repair
+          </h2>
+<p class="text-slate-300 text-sm leading-relaxed">
+            Fill out the service form for an immediate estimate, or call/message our direct communication lines. We respond promptly with pricing and earliest arrival times.
+          </p>
+<div class="space-y-4 pt-2">
+<!-- Direct Phone -->
+<a class="flex items-center gap-4 p-4 rounded-xl bg-brand-dark border border-slate-800 hover:border-brand-red transition group" href="tel:7137026531">
+<div class="w-12 h-12 rounded-lg bg-red-950/70 border border-brand-red/50 flex items-center justify-center text-brand-red group-hover:scale-105 transition">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-slate-400 block">Direct Mobile / Call / Text</span>
+<span class="text-base sm:text-lg font-bold text-white group-hover:text-brand-red transition">(713) 702-6531</span>
+</div>
+</a>
+<!-- Direct Email -->
+<a class="flex items-center gap-4 p-4 rounded-xl bg-brand-dark border border-slate-800 hover:border-brand-red transition group" href="mailto:alvarezautofix@gmail.com">
+<div class="w-12 h-12 rounded-lg bg-red-950/70 border border-brand-red/50 flex items-center justify-center text-brand-red group-hover:scale-105 transition">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-slate-400 block">Email Inquiries</span>
+<span class="text-base sm:text-lg font-bold text-white group-hover:text-brand-red transition">alvarezautofix@gmail.com</span>
+</div>
+</a>
+<!-- Facebook Messenger -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-brand-dark border border-slate-800">
+<div class="w-12 h-12 rounded-lg bg-blue-950/70 border border-blue-600/50 flex items-center justify-center text-blue-400">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.913 1.454 5.512 3.729 7.199V22l3.418-1.876c.91.252 1.873.388 2.853.388 5.523 0 10-4.145 10-9.253C22 6.145 17.523 2 12 2zm1.066 12.441l-2.73-2.91-5.328 2.91 5.86-6.22 2.795 2.91 5.263-2.91-5.86 6.22z"></path></svg>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-slate-400 block">Messenger Support</span>
+<span class="text-base font-bold text-white">Alvarez Auto Fix</span>
+</div>
+</div>
+<!-- Operating Hours -->
+<div class="p-4 rounded-xl bg-brand-dark border border-slate-800 text-xs sm:text-sm">
+<div class="font-bold text-white mb-1 flex items-center gap-2">
+<span>🕒</span> Operating Hours:
+              </div>
+<p class="text-slate-300">Monday – Wednesday: <strong>9:00 AM – 7:00 PM</strong></p>
+<p class="text-slate-400 text-xs mt-1">Roadside emergency repair calls handled on availability.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Booking Form -->
+<div class="lg:col-span-7">
+<div class="bg-brand-dark border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+<h3 class="text-2xl font-bold text-white uppercase tracking-tight mb-2">Request Quote / Book Service</h3>
+<p class="text-slate-400 text-xs sm:text-sm mb-6">
+              Tell us what is happening with your car and where you are located.
+            </p>
+<form class="space-y-4" id="quote-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Name -->
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="full-name">Your Name *</label>
+<input class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm" id="full-name" name="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<!-- Phone -->
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="phone-number">Phone Number *</label>
+<input class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm" id="phone-number" name="phone" placeholder="(DFW Area Code)" required="" type="tel"/>
+</div>
+</div>
+<!-- Vehicle Info -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="vehicle-details">Vehicle Year, Make &amp; Model *</label>
+<input class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm" id="vehicle-details" name="vehicle" placeholder="e.g. 2018 Ford F-150 / 2020 Nissan Altima" required="" type="text"/>
+</div>
+<!-- Location / Zip -->
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="location-zip">Location / Zip Code *</label>
+<input class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm" id="location-zip" name="location" placeholder="e.g. Dallas, Arlington, TX 75201" required="" type="text"/>
+</div>
+</div>
+<!-- Service Category Dropdown -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="service-category">Service Needed *</label>
+<select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white focus:outline-none focus:border-brand-red text-sm" id="service-category" name="service" required="">
+<option value="electrical">Electrical (Starter, Alternator, Battery)</option>
+<option value="cooling">Cooling System (Radiator, Water Pump, Hose)</option>
+<option value="suspension">Suspension (Struts, Control Arms, Ball Joints)</option>
+<option value="drivetrain">Drivetrain (CV Axles, Driveshaft)</option>
+<option value="brakes">Brake System (Pads, Rotors, Calipers)</option>
+<option value="steering">Steering (Tie Rods, Power Steering, Rack)</option>
+<option value="engine-gaskets">Engine Gaskets (Head, Valve, Oil Pan)</option>
+<option value="maintenance">Regular Maintenance (Oil Change, Plugs, Filters)</option>
+<option value="fuel">Fuel System (Gas Pump, Filter, Injectors)</option>
+<option value="intake">Air &amp; Intake (Manifold, Throttle Body)</option>
+<option value="belts">Drive Belts (Serpentine, Pulleys, Tensioners)</option>
+<option value="ac-heat">Heating &amp; A/C (Compressor, Recharge)</option>
+<option value="exhaust">Exhaust &amp; Emissions (Catalytic Converter)</option>
+<option value="general-diagnosis">General Diagnostic / Not Sure</option>
+</select>
+</div>
+<!-- Urgency -->
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="urgency-level">Urgency Level</label>
+<select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white focus:outline-none focus:border-brand-red text-sm" id="urgency-level" name="urgency">
+<option value="urgent">🚨 Immediate Roadside / Stranded</option>
+<option value="same-day">Today / Same Day if Available</option>
+<option value="scheduled">Scheduled Home or Workplace Appointment</option>
+<option value="quote-only">Just Inquiring for an Estimate</option>
+</select>
+</div>
+</div>
+<!-- Issue Description -->
+<div>
+<label class="block text-xs font-semibold uppercase text-slate-300 mb-1" for="problem-description">Describe What Your Car Is Doing</label>
+<textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm" id="problem-description" name="description" placeholder="Describe symptoms: strange noise, won't start, leaking fluid, dashboard lights..." rows="3"></textarea>
+</div>
+<!-- Military / Senior Checkbox -->
+<div class="flex items-center gap-2 pt-1">
+<input class="rounded bg-slate-900 border-slate-700 text-brand-red focus:ring-brand-red" id="discount-check" name="discount" type="checkbox" value="Yes"/>
+<label class="text-xs text-slate-300" for="discount-check">
+                  I qualify for the <strong>Senior Citizen</strong> or <strong>US Military Veteran</strong> Discount.
+                </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 rounded-xl bg-brand-red hover:bg-brand-redHover font-black text-white text-sm uppercase tracking-wider shadow-xl red-glow transition transform active:scale-95" type="submit">
+                Open Email Draft for Quote
+              </button>
+<p class="text-sm text-slate-300" id="form-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: BookingAndContactSection -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-black border-t border-slate-800 text-slate-400 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+<!-- Brand Info -->
+<div class="md:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-brand-red bg-slate-900">
+<img alt="Alvarez Auto Fix Logo" class="w-full h-full object-cover" src="assets/alvarez-brand-art.png"/>
+</div>
+<div>
+<span class="text-lg font-black text-white uppercase tracking-tight block">Alvarez Auto Fix</span>
+<span class="text-xs uppercase tracking-widest text-brand-red font-semibold block">Repair • Maintenance • Performance</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
+            Personal mechanic Valentin Alvarez. Providing expert, honest on-site automotive repair throughout the Dallas-Fort Worth metro area and surrounding communities. "Work Done Right."
+          </p>
+<div class="text-xs text-slate-500">
+            © 2026 Alvarez Auto Fix. All Rights Reserved. Fully Insured Mobile Workshop.
+          </div>
+</div>
+<!-- Quick Links -->
+<div class="space-y-2 text-xs sm:text-sm">
+<h4 class="font-bold text-white uppercase tracking-wider mb-3">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-white transition" href="#services">Services &amp; Specialties</a></li>
+<li><a class="hover:text-white transition" href="#how-it-works">How Mobile Repair Works</a></li>
+<li><a class="hover:text-white transition" href="#pricing-guarantee">Pricing &amp; No Towing Policy</a></li>
+<li><a class="hover:text-white transition" href="#reviews">Verified Testimonials</a></li>
+<li><a class="hover:text-white transition" href="#service-area">DFW Coverage Area</a></li>
+</ul>
+</div>
+<!-- Contact & Hours -->
+<div class="space-y-2 text-xs sm:text-sm">
+<h4 class="font-bold text-white uppercase tracking-wider mb-3">Contact &amp; Dispatch</h4>
+<p class="text-slate-300"><strong>Direct Phone:</strong> (713) 702-6531</p>
+<p class="text-slate-300"><strong>Email:</strong> alvarezautofix@gmail.com</p>
+<p class="text-slate-300"><strong>Service Days:</strong> Mon – Wed</p>
+<p class="text-slate-300"><strong>Hours:</strong> 9:00 AM – 7:00 PM</p>
+<div class="pt-2">
+<a class="inline-block bg-brand-red text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded hover:bg-brand-redHover transition" href="tel:7137026531">
+              Emergency Dispatch
+            </a>
+</div>
+</div>
+</div>
+<!-- Legal Disclaimer -->
+<div class="pt-8 border-t border-slate-900 text-[11px] text-slate-600 text-center md:text-left leading-relaxed">
+        Notice: Alvarez Auto Fix is an independent mobile mechanic service. Work carried out on customer premises or roadside locations is subject to safe and legal parking conditions. Senior and Military discounts applicable upon verification.
+      </div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<script src="app.js"></script>
+</body></html>
